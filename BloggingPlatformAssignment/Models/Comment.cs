@@ -2,10 +2,10 @@ namespace BloggingPlatformAssignment.Models;
 
 public class Comment
 {
-    public int Id { get; set; }
-    public int PostId { get; set; }
-    public int UserId { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public Guid PostId { get; set; }
+    public Guid UserId { get; set; }
     public string Content { get; set; }
-    public int? ReplyToCommentId { get; set; }
+    public Guid? ReplyToCommentId { get; set; }
     
 }

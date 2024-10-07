@@ -2,8 +2,8 @@ namespace BloggingPlatformAssignment.Models;
 
 public class Blog
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; }
-    public int BlogOwner { get; set; }
+    public Guid BlogOwner { get; set; }
     
 }
